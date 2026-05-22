@@ -1,0 +1,30 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["guillermo.guardian@fastly.com"]
+description = "Marcadores de fútbol en tiempo real con Fastly Fanout"
+language = "javascript"
+manifest_version = 3
+name = "mundial-claropay"
+service_id = "GEmH4A0MGEa1I4TYDbedDN"
+
+[local_server]
+
+  [local_server.backends]
+
+    [local_server.backends.origin]
+      url = "http://localhost:3000"
+
+  [local_server.pushpin]
+
+[scripts]
+  build = "npm run build"
+
+[setup]
+
+  [setup.backends]
+
+    [setup.backends.origin]
+      address = "localhost"
+      description = "Origin server con lógica de negocio y publisher"
+      port = 3000
