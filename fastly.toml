@@ -5,7 +5,7 @@ authors = ["guillermo.guardian@fastly.com"]
 description = "Marcadores de fútbol en tiempo real con Fastly Fanout"
 language = "javascript"
 manifest_version = 3
-name = "mundial-claropay"
+name = "mundial"
 service_id = "GEmH4A0MGEa1I4TYDbedDN"
 
 [local_server]
